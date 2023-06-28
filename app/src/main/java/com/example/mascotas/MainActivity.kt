@@ -17,13 +17,13 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
             //Launch the VerticalListActivity on verticalBtn click
-            /*binding.*/verticalBtn.setOnClickListener { launchVertical() }
+            verticalBtn.setOnClickListener { launchVertical() }
 
             //Launch the HorizontalListActivity on horizontalBtn click
-            /*binding.*/horizontalBtn.setOnClickListener { launchHorizontal() }
+            horizontalBtn.setOnClickListener { launchHorizontal() }
 
             //Launch the GridListActivity on gridBtn click
-            /*binding.*/gridBtn.setOnClickListener { launchGrid() }
+            gridBtn.setOnClickListener { launchGrid() }
         }
     }
 

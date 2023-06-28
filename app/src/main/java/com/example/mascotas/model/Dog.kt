@@ -5,7 +5,7 @@ import androidx.annotation.DrawableRes
 
 data class Dog(
     @DrawableRes val imageResourceID: Int,
-    val nameResourceId: String,
-    val ageResourceId: String,
-    val hobbiesResource: String
+    val name: String,
+    val age: String,
+    val hobbies: String
 )

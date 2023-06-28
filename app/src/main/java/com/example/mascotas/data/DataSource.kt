@@ -5,7 +5,6 @@ import com.example.mascotas.model.Dog
 
 /** Un objeto genera una lista estatica de mascotas */
 object DataSource {
-
     val dogs = listOf(
         Dog(R.drawable.tzeitel, "Tzeitel", "7", "sunbathing"),
         Dog(R.drawable.leroy, "Leroy", "4", "Dormir en lugares peli.."),
@@ -15,5 +14,4 @@ object DataSource {
         Dog(R.drawable.bella, "Bella", "14", "Chasing sea foam"),
         Dog(R.drawable.tzeitel, "TacoBell", "2", "Chasing sea foam"),
     )
-
 }

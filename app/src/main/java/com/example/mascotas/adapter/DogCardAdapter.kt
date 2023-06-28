@@ -22,7 +22,7 @@ class DogCardAdapter(
     //clase anidada, viewHolder representa cada vista de mi lista
     class DogCardViewHolder(view: View): RecyclerView.ViewHolder(view) {
         //Horizontal, Vertical && Grid
-        val imageView: ImageView = view.findViewById(R.id.dog_image)
+        val images: ImageView = view.findViewById(R.id.dog_image)
         val names: TextView = view.findViewById(R.id.dog_name)
         val ages: TextView = view.findViewById(R.id.dog_age)
         val hobbies: TextView = view.findViewById(R.id.dog_hobbies)
@@ -50,17 +50,15 @@ class DogCardAdapter(
     override fun onBindViewHolder(holder: DogCardViewHolder, position: Int) {
         val item = dataset[position]
         //Actualizando las vistas del contenedor
-        holder.imageView.setImageResource(item.imageResourceID)
+        holder.images.setImageResource(item.imageResourceID)
         if (context != null) {
-            holder.names.text = context.resources.getString( R.string.dog_name, item.nameResourceId)
-            holder.ages.text = context.resources.getString(R.string.dog_age, item.ageResourceId)
+            holder.names.text = context.resources.getString( R.string.dog_name, item.name)
+            holder.ages.text = context.resources.getString(R.string.dog_age, item.age)
         }
 
         val resources = context?.resources
-        holder.hobbies.text = resources?.getString(R.string.dog_hobbies, item.hobbiesResource)
-
+        holder.hobbies.text = resources?.getString(R.string.dog_hobbies, item.hobbies)
     }
 
-    override fun getItemCount(): Int = dataset.size //retorno el tamaño de datos
-
+    override fun getItemCount(): Int = dataset.size
 }
