@@ -1,5 +1,3 @@
-# Dogglers-App
-RecyclerViews
 # 🚀 Dogglers-App
 > Basic application of doggleres, I show an example of recyclerView [Linear Layout and  Grid Layout]
 
